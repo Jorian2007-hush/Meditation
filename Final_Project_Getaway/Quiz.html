@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Up!</title>
+    <link rel="stylesheet" href="css/Main_2.css">
+    <link rel="stylesheet" href="css/header_nav_footer.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+</script>
+</head>
+<body>
+    <header>
+       <img src="images/OIP (1)-Picsart-BackgroundRemover.jpg" alt="Relax">
+       <h2>Welcome To Meditation!</h2>
+        <h3>We Care Because You Do Too.</h3>
+    </header>
+ <nav id ="mobile_menu"></nav>
+  <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Quiz.html">Quiz</a></li>
+            <li><a href="About.html">Why do we care?</a></li>
+            <li><a href="Contents.html">What do we do?</a></li>
+            <li><a href="Feedback.html">Your feedback</a></li>
+        </ul>
+    </nav> 
+    <main>
+           <section>
+	    <h1>Stress quiz</h1>
+		<p>Fill out the form as completely as possible and we will email you a weekly plan,
+            customized for you--Your lifestyle, your goals, and your personal needs.
+        </p>
+        <form action="submit.html" method="get" id="Quiz">	
+        <fieldset>
+            <legend><h3>Tell us about yourself</h3></legend>
+            <label for="fullName">*Full name:</label>
+            <input type="text" id="fullName" required>
+            <label for= "email">*E-Mail:</label> 
+            <input type="email" name="*email" id="email" required><br>
+            <label for="Gender">Gender:</label>
+            <select name="Gender" id="Gender"required><br>
+                <option value="p">Pick a Gender</option>
+                <option value="m">Male</option>
+                <option value="f">Female</option>
+                <option value="o">Other</option>
+            </select><br>
+            <label for="Age">Age:</label>
+            <select name="Age" id="Age" required><br>
+                <option value="Pick an age"></option>
+                <option value="u">Under 18</option>
+                <option value="18-34">18-34</option>
+                <option value="35-44">35-44</option>
+                <option value="45-69">45-69</option>
+                <option value="70+">70+</option>
+            </select><br>
+        </fieldset> 
+        <fieldset>
+         <legend><h3>Lifestyle and goals</h3></legend>
+         <p>Are you always stressful about your life/world 24/7?</p>
+         <div class="radio-row">
+         <input type="radio" id="stressful" name = "yes/no" value="yes" required>
+         <label for="stressful">yes</label><br>
+        <input type="radio" id="stressful" name = "yes/no" value="no" required>
+         <label for="stressful">no</label><br>
+        <input type="radio" id="stressful" name = "yes/no" value="sometimes" required>
+         <label for="stressful">sometimes</label><br>
+         </div>
+         <p>How long do you want your meditation to be </p>
+         <div class="radio-row">
+        <input type="radio" id="minutes" name = "mins" value="less-5" required>
+         <label for="minutes">Less than 5 minutes</label><br>
+        <input type="radio" id="minutes" name = "mins" value="between" required>
+         <label for="minutes">Between 5 and 10 minutes</label><br>
+        <input type="radio" id="minutes" name = "mins" value="more" required>
+         <label for="minutes">More than 10 minutes</label><br>
+         </div>
+         <p>How would you like to feel after meditation?</p>
+        <div class="radio-row">
+        <input type="radio" id="after" name = "Lifestyle3" value="ground" required>
+         <label for="options">Calm and Grounded</label><br>
+        <input type="radio" id="after" name = "Lifestyle3" value="love" required>
+         <label for="options">Full of love</label><br>
+         <input type="radio" id="after" name = "Lifestyle3" value="blissed" required>
+         <label for="options">Blissed out</label><br>
+          <input type="radio" id="after" name = "Lifestyle3" value="re-energized" required>
+         <label for="options">Re-energized and clear</label><br>
+         </div>
+        </fieldset>
+        <fieldset>
+        <legend><h3>Experiences</h3></legend>
+        <p>What would you like meditation to help you with the most? (select all that apply)</p>
+        <div class="check-row">
+        <input type="checkbox" name="stress" id="stress" value="calm">
+        <label for="stress">Calming my nervous system and releasing stress.</label><br>
+        <input type="checkbox" name="stress2" id="stress2" value="strength">
+        <label for="stress2">Strengthening my confidence and self-esteem.</label><br>
+        <input type="checkbox" name="stress3" id="stress3" value="ideas">
+        <label for="stress3">Getting creative ideas and inspiration.</label><br>
+        <input type="checkbox" name="stress4" id="stress4" value="help">
+        <label for="stress4">Helping my body to find a deeper sense of balance.</label><br>
+        </div>
+        <input type="checkbox" name="stress5" id="stress5" value="other">
+        <label for="stress5">Other, please explain:</label><br>
+        <textarea name="comments" id="comments"></textarea>
+        </fieldset>
+        <fieldset>
+        <legend><h3>Comments</h3></legend>
+        <p>Include any additional information that will help is develop a your own Meditation routine</p>
+       <textarea name="comments" id="comments"></textarea>
+               <div id="quiz"></div>
+    <button id="submit">Submit Quiz</button>
+    <div id="results"></div>
+        </fieldset>
+        </section>
+<script src="js/Java.js"></script>
+            <aside>
+            <h2>
+                Additional resources
+            </h2>
+            <ul>
+                <li><a href="https://www.helpguide.org/">Stress & Mental Health Guide</a></li>
+                <li><a href="https://www.changetochill.org/">Change to chill</a></li>
+            </ul>
+        </aside>
+        </main>
+        <footer>
+    <p>© 2026 Jorian Freiseis | Last updated: May 2026</p>
+</footer>
+</body>
+</html>

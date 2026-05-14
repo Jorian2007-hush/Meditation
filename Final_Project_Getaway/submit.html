@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shape Up!</title>
+    <link rel="stylesheet" href="css/Main_2.css">
+    <link rel="stylesheet" href="css/header_nav_footer.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/quiz.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>    
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+</script>
+</head>
+<body>
+    <header>
+       <img src="images/OIP (1)-Picsart-BackgroundRemover.jpg" alt="Relax">
+       <h2>Welcome To Meditation!</h2>
+        <h3>We Care Because You Do Too.</h3>
+    </header>
+ <nav id ="mobile_menu"></nav>
+  <nav id="nav_menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Quiz.html">Quiz</a></li>
+            <li><a href="About.html">Why do we care?</a></li>
+            <li><a href="Contents.html">What do we do?</a></li>
+            <li><a href="Feedback.html">Your feedback</a></li>
+        </ul>
+    </nav> 
+    <main>
+    <section>
+	    <h1>Your submission has been received</h1>
+		<p>Your stress plans will begin arriving in your email in a few days.</p>
+        <p>Thank you for using our service. You are on the path to a peaceful life!</p>
+
+        <div id="results"></div>
+        </section>
+        <aside>
+            <h2>
+                Additional resources
+            </h2>
+            <ul>
+                <li><a href="https://www.helpguide.org/">Stress & Mental Health Guide</a></li>
+                <li><a href="https://www.changetochill.org/">Change to chill</a></li>
+            </ul>
+        </aside>
+    </main>
+<footer>
+    <p>© 2026 Jorian Freiseis | Last updated: May 2026</p>
+</footer>
+    <script src="js/submit.js"></script>
+</body>
+
+</html>

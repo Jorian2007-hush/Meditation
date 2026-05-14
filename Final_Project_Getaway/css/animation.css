@@ -1,0 +1,34 @@
+.icon{
+    width: 32px;
+    transition: width 1s ease-in-out;
+}
+.icon:hover {
+    width: 50px;
+}
+header h2 {animation: moveright 5s ease-in-out 5s 2 alternate;
+    animation-fill-mode: both;}
+
+@keyframes moveright{
+    from{ margin-left: 20%;
+    color: purple;}
+    to{ margin-left: 60%;
+    color: maroon;}
+}
+.zoom {
+  transition: transform .2s;
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
+@media only screen and (max-width: 769px)
+{
+header h2{
+  animation: none;
+}
+  
+}
