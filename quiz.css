@@ -1,0 +1,67 @@
+label {
+    display: inline-block;
+    width: 8em;
+    text-align: right;
+    margin-right: 0.5em;
+}
+
+input {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 0.5em;
+}
+input, select{
+    width: 15em;
+    margin-left: .5em;
+    margin-bottom: .5em;
+}
+input[type="radio"] + label {
+    width: auto;          
+    margin: 0;
+}
+input[type="radio"] {
+    width: auto;          
+    text-align: left;
+    margin: 0;
+    display: inline;
+}
+.radio-row {
+    display: flex;
+    flex-direction: row;       
+    align-items: center;
+    gap: 1em;                 
+    margin-bottom: 0.5em;
+}
+input[type="checkbox"] + label {
+    width: auto;          
+    margin: 0;
+}
+input[type="checkbox" ]
+{
+    width: auto;         
+    text-align: left;
+    margin: 0;
+    display: inline;
+}
+.check-row {
+    display: flex;
+    flex-direction: row;       
+    align-items: center;
+    gap: 1em;                  
+    margin-bottom: 0.5em;
+}
+textarea{
+    height: 5em;width: 25em
+    ;
+}
+@media only screen and (max-width: 479px){
+
+  .check-row, .radio-row {
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+  }
+
+}
